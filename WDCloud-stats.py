@@ -3,7 +3,7 @@ import smtplib, subprocess, os
 #subprocess.call('./Systeminfo.shSystemlog.txt')
 os.system('bash ./Systeminfo.sh > Systemlog.txt')
 conn=smtplib.SMTP_SSL('smtp.googlemail.com',465)
-conn.login('apj.mishra@gmail.com','')
+conn.login('apj.mishra@gmail.com','<>')
 
 fopen=open("Systemlog.txt")
 text=fopen.read()
